@@ -1,0 +1,14 @@
+version: 2
+sources:
+  - name: source_sales
+    schema: raw_adventure_works
+    database: FEA24_11
+    tables:
+      - name: CUSTOMER
+      - name: SALESORDERHEADER
+      - name: SALESORDERHEADERSALESREASON
+      - name: SALESREASON
+      - name: SALESORDERDETAIL
+      - name: SALESTERRITORY
+      - name: CREDITCARD
+      - name: PERSONCREDITCARD

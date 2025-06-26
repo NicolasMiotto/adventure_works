@@ -1,0 +1,26 @@
+models:
+  - name: int_card
+    description: Tabela da camada intermediária com dados de cartões de credito.
+    columns:
+      - name: sk_credit_card
+        description: Chave primária que identifica cada cartão.
+        data_tests:
+          - unique
+          - not_null
+
+      - name: creditcardid
+        description: Identificador unico de cada cartão cadastrado no sistema.
+        data_tests:
+          - unique
+          - not_null
+      
+      - name: cardtype
+        description: Nomenclatura dos tipos de cartão cadastrados.
+
+      - name: cardnumber
+        description: Registro com os respectivos números dos cartões de credito da Tabela.
+        data_tests:
+          - unique
+
+      - name: expyear
+        description: Ano em que os cartões que estão nos registros irão expirar.

@@ -1,0 +1,72 @@
+version: 2
+
+models:
+  - name: int_sales
+    description: "Tabela da camada intermediária contendo detalhes consolidados de pedidos de vendas, incluindo informações de cartão de crédito, cliente, produto e valores financeiros."
+    columns:
+      - name: sk_fact_sales
+        description: "Chave substituta única para identificar cada registro de fato de venda."
+        tests:
+          - not_null
+
+      - name: salesorderid
+        description: "Identificador único do pedido de venda."
+        tests:
+          - not_null
+
+      - name: productid
+        description: "Identificador único do produto vendido no pedido."
+
+      - name: billtoaddressid
+        description: "Identificador do endereço de cobrança associado ao pedido."
+
+      - name: creditcardid
+        description: "Identificador do cartão de crédito usado na transação."
+
+      - name: customerid
+        description: "Identificador único do cliente que realizou o pedido."
+
+      - name: salespersonid
+        description: "Identificador do vendedor associado ao pedido."
+
+      - name: territoryid
+        description: "Identificador do território de vendas do pedido."
+
+      - name: orderqty
+        description: "Quantidade de itens do produto no pedido."
+
+      - name: unitprice
+        description: "Preço unitário do produto."
+
+      - name: unitpricediscount
+        description: "Valor do desconto unitário aplicado ao produto."
+
+      - name: product_real_value
+        description: "Valor real do produto após descontos."
+
+      - name: reason_type
+        description: "Tipo de razão associada ao pedido de venda (concatenado se houver múltiplos)."
+
+      - name: order_status
+        description: "Status atual do pedido de venda (ex: Em Processamento, Enviado, Cancelado)."
+
+      - name: have_online_order
+        description: "Indica se o pedido foi realizado online (TRUE/FALSE)."
+        
+      - name: subtotal
+        description: "Subtotal do pedido antes da aplicação de impostos e frete."
+
+      - name: taxamt
+        description: "Valor total do imposto aplicado ao pedido."
+
+      - name: freight
+        description: "Valor total do frete do pedido."
+
+      - name: totaldue
+        description: "Valor total devido pelo cliente para o pedido (Subtotal + Imposto + Frete)."
+
+      - name: duedate
+        description: "Data de vencimento do pedido."
+
+      - name: shipdate
+        description: "Data de envio do pedido."

@@ -1,0 +1,12 @@
+version: 2
+sources:
+  - name: source_person
+    schema: raw_adventure_works
+    database: FEA24_11
+    tables:
+      - name: PERSON
+        description: >
+          Contém informações sobre as pessoas na base de dados da adventure works, incluindo clientes, funcionários e fornecedores.
+      - name: COUNTRYREGION
+      - name: STATEPROVINCE
+      - name: ADDRESS

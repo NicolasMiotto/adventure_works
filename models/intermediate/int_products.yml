@@ -1,0 +1,26 @@
+models:
+  - name: int_products
+    description: Tabela da camada intermediaria contendo os produtos, suas categorias e subcategorias.
+    columns:
+      - name: sk_products
+        description: Chave primária que identifica de forma única cada produto.
+        data_tests:
+          - not_null
+          - unique
+    
+      - name: productid
+        description: Chave primária que identifica os produtos.
+        data_tests:
+          - unique
+          - not_null
+
+      - name: product_name
+        description: Nome do produto.
+        data_tests:
+          - not_null
+
+      - name: subcategory_name
+        description: Nome da subcategoria do produto.
+
+      - name: category_name
+        description: Nome da categoria a qual a subcategoria e o produto fazem parte.

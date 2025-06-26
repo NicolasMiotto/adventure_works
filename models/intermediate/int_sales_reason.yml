@@ -1,0 +1,17 @@
+models:
+  - name: int_sales_reason
+    description: Tabela intermediária com dados de motivos associados as vendas.
+    columns:
+      - name: sk_sales_reason
+        description: Chave primária que identifica de forma única cada motivo de venda.
+        data_tests:
+          - not_null
+
+      - name: sales_order_id
+        description: Identificador dos pedidos.
+        
+      - name: reason_type
+        description: dados concatenados dos tipos de motivo associados aos pedidos.
+
+      - name: reason_name
+        description: Dados com a nomenclatura dos motivos de venda.

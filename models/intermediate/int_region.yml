@@ -1,0 +1,27 @@
+models:
+  - name: int_territory
+    description: Tabela da camada intermediaria contendo dados geográficos.
+    columns:
+      - name: sk_region
+        description: Chave primária que identifica de forma única cada região.
+        data_tests:
+          - not_null
+          - unique
+    
+      - name: addressid
+        description: Chave primária que identifica os endereços.
+        data_tests:
+          - unique
+          - not_null
+      
+      - name: city
+        description: Nome da cidade.
+
+      - name: c_region_name
+        description: Nome da região.
+      
+      - name: province_name
+        description: Nome do Estado.
+
+      - name: stateprovincecode
+        description: Codigo do estado.

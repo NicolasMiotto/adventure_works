@@ -1,0 +1,17 @@
+models:
+  - name: int_customers
+    description: Tabela da camada intermediária do fluxo com dados dos clientes.
+    columns:
+      - name: sk_customer
+        description: Chave primária que identifica cada cliente.
+        data_tests:
+          - unique
+          - not_null
+      - name: customerid
+        description: identificador unico do cliente.
+      - name: storeid
+        description: identificador das lojas.
+      - name: territoryid
+        description: identificador de territorio.
+      - name: full_name
+        description: Nome completo do cliente.
