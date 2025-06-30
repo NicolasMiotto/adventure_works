@@ -1,0 +1,24 @@
+models:
+  - name: dim_customer
+    description: Dimensão com dados dos clientes com dados pessoais e organizacionais.
+    columns:
+      - name: sk_customer
+        description: Chave substituta única que representa o cliente na dimensão.
+
+      - name: customerid
+        description: Identificador do cliente no sistema transacional.
+
+      - name: personid
+        description: Código da pessoa associada ao cliente.
+
+      - name: storeid
+        description: Identificador da loja vinculada ao cliente.
+
+      - name: territoryid
+        description: Código do território associado ao cliente.
+
+      - name: full_name
+        description: Nome completo do cliente.
+
+      - name: persontype
+        description: Tipo de entidade registrada.

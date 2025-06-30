@@ -1,0 +1,15 @@
+models:
+  - name: dim_sales_reason
+    description: Dimensão que armazena os dados referentes aos motivos das vendas da Adventure Works.
+    columns:
+      - name: sk_sales_reason
+        description: Chave substituta exclusiva que identifica cada motivo de venda na dimensão.
+
+      - name: salesorderid
+        description: Identificador do pedido de venda relacionado ao motivo registrado.
+
+      - name: reason_type
+        description: Categoria a qual o motivo da venda pertence.
+
+      - name: name
+        description: Motivo apontado pelo cliente.

@@ -1,0 +1,18 @@
+models:
+  - name: dim_product
+    description: Dimensão com dados dos produtos com informações de categoria e subcategoria.
+    columns:
+      - name: sk_products
+        description: Chave substituta única para cada registro de produto.
+
+      - name: productid
+        description: Identificador original do produto no sistema transacional.
+
+      - name: product_name
+        description: Nome do produto conforme registrado no catálogo.
+
+      - name: subcategory_name
+        description: Subcategoria à qual o produto pertence.
+
+      - name: category_name
+        description: Categoria principal associada ao produto.

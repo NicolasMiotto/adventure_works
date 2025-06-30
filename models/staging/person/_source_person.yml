@@ -7,6 +7,33 @@ sources:
       - name: PERSON
         description: >
           Contém informações sobre as pessoas na base de dados da adventure works, incluindo clientes, funcionários e fornecedores.
+        columns:
+          - name: businessentityid
+            data_tests:
+              - unique
+              - not_null
+
       - name: COUNTRYREGION
+        description: >
+          Contém informações geográficas a nivel país/estado.
+        columns:
+          - name: countryregioncode
+            data_tests:
+              - unique
+              - not_null
       - name: STATEPROVINCE
+        description: >
+          Contém informações geográficas a nivel cidade.
+        columns:
+          - name: stateprovinceid
+            data_tests:
+              - unique
+              - not_null
       - name: ADDRESS
+        description: >
+          Contém o endereço dos clientes, funcionários e fornecedores.
+        columns:
+          - name: addressid
+            data_tests:
+              - unique
+              - not_null

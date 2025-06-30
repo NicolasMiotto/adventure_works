@@ -1,0 +1,66 @@
+models:
+  - name: fact_sales
+    description: Tabela fato que registra dados detalhados sobre as transações realizadas pela Adventure Works.
+    columns:
+      - name: salesorderid
+        description: Identificador único do pedido de venda.
+
+      - name: productid
+        description: Identificador do produto que foi vendido na transação.
+
+      - name: customerid
+        description: Identificador do cliente responsável pela compra do pedido.
+
+      - name: salespersonid
+        description: Código do funcionário envolvido na realização da venda.
+
+      - name: territoryid
+        description: Código da região em que a venda foi realizada.
+
+      - name: billtoaddressid
+        description: Endereço de cobrança registrado para o pedido.
+
+      - name: creditcardid
+        description: Identificador do cartão de crédito utilizado na transação de venda.
+
+      - name: orderqty
+        description: Número de unidades adquiridas do produto no pedido.
+
+      - name: unitprice
+        description: Valor individual do produto no momento da venda.
+
+      - name: unitpricediscount
+        description: Valor de desconto concedido sobre o preço unitário do produto.
+
+      - name: product_real_value
+        description: Preço final do produto considerando descontos aplicados.
+
+      - name: reason_type
+        description: Motivo registrado para a realização da venda.
+
+      - name: order_status
+        description: Situação atual do pedido.
+
+      - name: have_online_order
+        description: Indica o canal de vendas do pedido.
+
+      - name: subtotal
+        description: Subtotal do pedido antes de serem adicionados valores com frete.
+
+      - name: taxamt
+        description: Quantia total de tributos aplicados ao pedido.
+
+      - name: freight
+        description: Valor do custo de transporte do pedido.
+
+      - name: totaldue
+        description: Valor final a ser pago pelo cliente.
+
+      - name: duedate
+        description: Data limite para o pagamento ou vencimento do pedido.
+
+      - name: shipdate
+        description: Data em que o pedido foi enviado para o cliente.
+
+      - name: sk_fact_sales
+        description: Chave substituta única utilizada para identificar cada registro na tabela fato.

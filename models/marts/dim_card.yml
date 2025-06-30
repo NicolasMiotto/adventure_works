@@ -1,0 +1,18 @@
+models:
+  - name: dim_credit_card
+    description: Dimensão com dados dos cartões utilizados nas transações.
+    columns:
+      - name: sk_credit_card
+        description: Chave substituta única que representa o cartão de crédito na dimensão.
+
+      - name: creditcardid
+        description: Identificador original do cartão no sistema de origem.
+
+      - name: cardtype
+        description: Tipo de cartão utilizado na compra.
+
+      - name: cardnumber
+        description: Número do cartão.
+
+      - name: expyear
+        description: Ano de expiração do cartão.

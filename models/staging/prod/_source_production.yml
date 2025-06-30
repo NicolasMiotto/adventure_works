@@ -5,5 +5,29 @@ sources:
     database: FEA24_11
     tables:
       - name: PRODUCT
+        description: >
+          Contém dados dos produtos comercializados pela Adventure Works.
+        columns:
+          - name: productid
+            data_tests:
+              - unique
+              - not_null
       - name: PRODUCTCATEGORY
+        description: >
+          Contém dados de categorização dos produtos da Adventure Works.
+        columns:
+          - name: productcategoryid
+            data_tests:
+              - unique
+              - not_null
+
       - name: PRODUCTSUBCATEGORY
+        description: >
+          Contém dados para a subcategorização dos produtos da Adventure Works.
+        columns:
+          - name: productsubcategoryid
+            data_tests:
+              - unique
+              - not_null
+
+

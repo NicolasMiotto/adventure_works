@@ -1,0 +1,18 @@
+models:
+  - name: dim_region
+    description: Dimensão com dados geográficos relacionados ao endereço de cobrança dos pedidos.
+    columns:
+      - name: sk_region
+        description: Chave substituta que identifica de forma única cada região registrada.
+
+      - name: billtoaddressid
+        description: Identificador do endereço de cobrança associado à região.
+
+      - name: c_region_name
+        description: Nome do país correspondente ao endereço.
+
+      - name: city
+        description: Nome da cidade correspondente ao endereço de cobrança.
+
+      - name: province_name
+        description: Nome da província ocorrespondente à localidade.

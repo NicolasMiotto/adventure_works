@@ -5,10 +5,65 @@ sources:
     database: FEA24_11
     tables:
       - name: CUSTOMER
+        description: >
+          Contém dados cadastrais dos clientes da Adventure Works.
+        columns:
+          - name: customerid
+            data_tests:
+              - unique
+              - not_null
       - name: SALESORDERHEADER
+        description: >
+          Contém metadados sobre os pedidos, informações sobre os pedidos de compra.
+        columns:
+          - name: salesorderid
+            data_tests:
+              - unique
+              - not_null
       - name: SALESORDERHEADERSALESREASON
+        description: >
+          Contém dados relacionais para as tabelas salesorderheader e salesreason.
+        columns:
+          - name: salesorderid
+            data_tests:
+              - not_null
       - name: SALESREASON
+        description: >
+          Contém dados que revelam o motivo de compra dos clientes.
+        columns:
+          - name: salesreasonid
+            data_tests:
+              - unique
+              - not_null
       - name: SALESORDERDETAIL
+        description: >
+          Contém dados sobre os detalhes dos pedidos como preço unitário dos itens e desconto.
+        columns:
+          - name: salesorderdetailid
+            data_tests:
+              - unique
+              - not_null
       - name: SALESTERRITORY
+        description: >
+          Contém dados regionais das vendas.
+        columns:
+          - name: territoryid
+            data_tests:
+              - unique
+              - not_null
       - name: CREDITCARD
+        description: >
+          Contém dados dos cartões dos clientes utilizados nas compras.
+        columns:
+          - name: creditcardid
+            data_tests:
+              - unique
+              - not_null
       - name: PERSONCREDITCARD
+        description: >
+          Contém dados relacionais para os cartões de credito e entidades de negócio da Adventure Works.
+        columns:
+          - name: businessentityid
+            data_tests:
+              - unique
+              - not_null
